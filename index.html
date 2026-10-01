@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Jabar Fatai | Frontend Developer — React, Next.js &amp; TypeScript
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Jabar Fatai, a results-driven Frontend Developer with 3+ years of experience in JavaScript, React, Next.js and React Native."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER / NAV ================= -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo"
+          ><span class="nav__logo-badge">JF</span> Jabar&nbsp;Fatai</a
+        >
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#gallery" class="nav__link">Gallery</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+          </li>
+        </ul>
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- ================= HERO ================= -->
+      <section class="hero section" id="home">
+        <div class="hero__container container">
+          <div class="hero__data">
+            <p class="hero__eyebrow reveal">👋 Hello, I'm</p>
+            <h1 class="hero__name reveal">Jabar Fatai</h1>
+            <h2 class="hero__role reveal">
+              I'm a
+              <span class="hero__typed" id="typed-role">Frontend Developer</span
+              ><span class="hero__caret" aria-hidden="true"></span>
+            </h2>
+            <p class="hero__desc reveal">
+              Results-driven Frontend Developer with
+              <strong>3+ years</strong> of experience in JavaScript, React and
+              Next.js. I build scalable, high-performance web applications with
+              responsive, user-focused interfaces — and I love delivering
+              impactful digital solutions remotely.
+            </p>
+
+            <div class="hero__actions reveal">
+              <a href="#contact" class="btn btn--primary">Hire Me</a>
+              <a
+                href="assets/Jabar-Fatai-CV.pdf"
+                download
+                class="btn btn--ghost"
+                >Download CV</a
+              >
+            </div>
+
+            <div class="hero__socials reveal">
+              <a
+                href="https://github.com/Abu-Haneefah"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.35-1.29-1.71-1.29-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/fatai-jabar-9309a4279"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:aabdfatahi@gmail.com" aria-label="Email">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 6-10 7L2 6" />
+                </svg>
+              </a>
+              <a
+                href="https://fatai-io-n11x.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Portfolio"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <ul class="hero__stats reveal">
+              <li><strong>3+</strong><span>Years Experience</span></li>
+              <li><strong>10+</strong><span>Projects Shipped</span></li>
+              <li><strong>4.72</strong><span>CGPA / 5.00</span></li>
+            </ul>
+          </div>
+
+          <div class="hero__media reveal">
+            <div class="hero__photo-ring"></div>
+            <figure class="hero__photo">
+              <img
+                src="photos/hero%20(2).png"
+                alt="Illustration of a developer working on a laptop"
+                loading="eager"
+              />
+            </figure>
+            <figure class="hero__avatar" title="Jabar Fatai">
+              <img src="assets/images/fatai.jpg" alt="Jabar Fatai" />
+            </figure>
+            <span class="hero__badge hero__badge--top"
+              >⚛️ React &amp; Next.js</span
+            >
+
+            <span class="hero__badge hero__badge--bottom"
+              >🌍 Open to remote roles</span
+            >
+          </div>
+        </div>
+        <a
+          href="#about"
+          class="hero__scroll"
+          aria-label="Scroll to about section"
+          >⌄</a
+        >
+      </section>
+      <!-- ================= ABOUT ================= -->
+      <section class="about section" id="about">
+        <div class="container">
+          <p class="section__eyebrow reveal">Get to know me</p>
+          <h2 class="section__title reveal">About Me</h2>
+
+          <div class="about__grid">
+            <div class="about__content reveal">
+              <p>
+                I'm <strong>Jabar Fatai</strong>, a results-driven Frontend
+                Developer with <strong>3+ years of experience</strong> in
+                JavaScript, React, Next.js and React Native. I have a proven
+                track record of building scalable, high-performance web
+                applications — reducing bugs by <strong>60%</strong>, improving
+                load speeds by <strong>40%</strong> and enhancing mobile UX by
+                <strong>50%</strong>.
+              </p>
+              <p>
+                I enjoy translating designs into responsive, user-focused
+                interfaces, collaborating with cross-functional teams, and
+                writing clean, maintainable code. Passionate about delivering
+                impactful digital solutions remotely, I have built a growing
+                reputation as a top performer on high-impact teams.
+              </p>
+
+              <dl class="about__facts">
+                <div>
+                  <dt>Full name</dt>
+                  <dd>Jabar Fatai</dd>
+                </div>
+                <div>
+                  <dt>Phone</dt>
+                  <dd><a href="tel:+2349069115484">+234 906 911 5484</a></dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:aabdfatahi@gmail.com"
+                      >aabdfatahi@gmail.com</a
+                    >
+                  </dd>
+                </div>
+                <div>
+                  <dt>Availability</dt>
+                  <dd>Remote · Full-time / Contract</dd>
+                </div>
+              </dl>
+
+              <div class="about__actions">
+                <a
+                  href="assets/Jabar-Fatai-CV.pdf"
+                  download
+                  class="btn btn--primary"
+                  >Download CV</a
+                >
+                <a href="#contact" class="btn btn--ghost">Let's talk</a>
+              </div>
+            </div>
+
+            <div class="about__cards">
+              <article class="info-card reveal">
+                <span class="info-card__icon">🎓</span>
+                <div>
+                  <h3>BSc. Physics Education</h3>
+                  <p>University of Nigeria, Nsukka · 2019 – 2023</p>
+                  <span class="info-card__tag">CGPA: 4.72 / 5.00</span>
+                </div>
+              </article>
+
+              <article class="info-card reveal">
+                <span class="info-card__icon">📜</span>
+                <div>
+                  <h3>Frontend Developer Professional</h3>
+                  <p>SwiftStack Academy · 07 December 2020</p>
+                  <span class="info-card__tag">Certified</span>
+                </div>
+              </article>
+
+              <article class="info-card reveal">
+                <span class="info-card__icon">💼</span>
+                <div>
+                  <h3>Frontend Developer @ MMG Africa</h3>
+                  <p>Oct 2024 – Present · Building micro-service apps</p>
+                  <span class="info-card__tag">Current role</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= SKILLS ================= -->
+      <section class="skills section section--alt" id="skills">
+        <div class="container">
+          <p class="section__eyebrow reveal">What I work with</p>
+          <h2 class="section__title reveal">Skills &amp; Tools</h2>
+
+          <div class="skills__grid">
+            <article class="skill-group reveal">
+              <h3>💻 Languages</h3>
+              <ul class="chips">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Sass / SCSS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>PHP</li>
+                <li>Dart</li>
+                <li>Java</li>
+              </ul>
+            </article>
+
+            <article class="skill-group reveal">
+              <h3>⚛️ Frameworks &amp; Libraries</h3>
+              <ul class="chips">
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>React Native</li>
+                <li>Tailwind CSS</li>
+                <li>Ant Design</li>
+                <li>Material UI</li>
+                <li>Redux</li>
+                <li>Express.js</li>
+                <li>Firebase</li>
+              </ul>
+            </article>
+
+            <article class="skill-group reveal">
+              <h3>🛠️ Tools &amp; Platforms</h3>
+              <ul class="chips">
+                <li>Git &amp; GitHub</li>
+                <li>Jenkins</li>
+                <li>REST APIs</li>
+                <li>Postman</li>
+                <li>Figma</li>
+                <li>Jira</li>
+                <li>WordPress</li>
+                <li>MS Office</li>
+              </ul>
+            </article>
+
+            <article class="skill-group reveal">
+              <h3>🗄️ Databases</h3>
+              <ul class="chips">
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+              </ul>
+            </article>
+
+            <article class="skill-group reveal">
+              <h3>🤝 Professional Strengths</h3>
+              <ul class="chips chips--accent">
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Adaptability</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+                <li>Fast Learner</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ================= EXPERIENCE ================= -->
+      <section class="experience section" id="experience">
+        <div class="container">
+          <p class="section__eyebrow reveal">My journey</p>
+          <h2 class="section__title reveal">Experience &amp; Education</h2>
+
+          <div class="timeline">
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <header>
+                  <div>
+                    <h3>Frontend Developer</h3>
+                    <p class="timeline__org">MMG Africa Ltd</p>
+                  </div>
+                  <span class="timeline__date">Oct 2024 – Present</span>
+                </header>
+                <ul>
+                  <li>
+                    Built scalable micro-service applications for a centralized
+                    banking system using Next.js and Ant Design, improving
+                    transaction reliability and streamlining data flow across
+                    internal tools.
+                  </li>
+                  <li>
+                    Engineered a cross-platform school management app with React
+                    Native, TypeScript and Redux — reducing assignment
+                    processing time by 30% and improving parent-teacher
+                    engagement.
+                  </li>
+                  <li>
+                    Translated complex user stories into functional,
+                    production-ready interfaces; reduced bugs by 60% through
+                    rigorous testing and code reviews.
+                  </li>
+                </ul>
+                <div class="timeline__tags">
+                  <span>Next.js</span><span>Ant Design</span
+                  ><span>React Native</span><span>TypeScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <header>
+                  <div>
+                    <h3>Frontend Developer</h3>
+                    <p class="timeline__org">ForthBridge Technologies Ltd</p>
+                  </div>
+                  <span class="timeline__date">Nov 2023 – Oct 2024</span>
+                </header>
+                <ul>
+                  <li>
+                    Spearheaded frontend development of "T &amp; T Deals", an
+                    e-commerce platform — increased sales conversion by 15%,
+                    boosted mobile users by 25% and reduced page load times by
+                    40%.
+                  </li>
+                  <li>
+                    Developed reusable, responsive UI components and design
+                    systems that improved development efficiency by 20%.
+                  </li>
+                  <li>
+                    Collaborated with designers and backend engineers to deliver
+                    pixel-perfect, accessible interfaces.
+                  </li>
+                </ul>
+                <div class="timeline__tags">
+                  <span>React.js</span><span>Tailwind CSS</span
+                  ><span>REST APIs</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <header>
+                  <div>
+                    <h3>Frontend Developer</h3>
+                    <p class="timeline__org">
+                      Excel Data Technology / SwiftStack Academy
+                    </p>
+                  </div>
+                  <span class="timeline__date">Feb 2021 – Sep 2023</span>
+                </header>
+                <ul>
+                  <li>
+                    Developed and launched the official SwiftStack Academy
+                    website with HTML, CSS, JavaScript, Bootstrap and PHP,
+                    improving accessibility and enrollment efficiency.
+                  </li>
+                  <li>
+                    Administered marketing campaigns, SEO optimization and
+                    Google Analytics — generated a 30% increase in student
+                    enrollment.
+                  </li>
+                  <li>
+                    Optimized onboarding and landing pages, reducing user churn
+                    by 25%.
+                  </li>
+                </ul>
+                <div class="timeline__tags">
+                  <span>JavaScript</span><span>Bootstrap</span><span>PHP</span
+                  ><span>SEO</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline__item timeline__item--education reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <header>
+                  <div>
+                    <h3>BSc. Physics Education</h3>
+                    <p class="timeline__org">University of Nigeria, Nsukka</p>
+                  </div>
+                  <span class="timeline__date">2019 – 2023</span>
+                </header>
+                <p>
+                  Graduated with a CGPA of <strong>4.72 / 5.00</strong>,
+                  alongside self-driven studies in modern web technologies.
+                </p>
+                <div class="timeline__tags"><span>CGPA 4.72 / 5.00</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ================= PROJECTS ================= -->
+      <section class="projects section section--alt" id="projects">
+        <div class="container">
+          <p class="section__eyebrow reveal">Things I've built</p>
+          <h2 class="section__title reveal">Featured Projects</h2>
+
+          <div class="projects__grid">
+            <article class="project-card reveal">
+              <div class="project-card__head">
+                <span class="project-card__icon">🏦</span>
+                <a
+                  class="project-card__link"
+                  href="https://shanono-bank.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Shanono Bank"
+                  >↗</a
+                >
+              </div>
+              <h3>Shanono Bank</h3>
+              <p>
+                A centralized banking system with secure transaction flows,
+                account dashboards and internal micro-services — built for
+                reliability and speed.
+              </p>
+              <div class="timeline__tags">
+                <span>Next.js</span><span>Ant Design</span><span>REST API</span>
+              </div>
+              <a
+                class="project-card__cta"
+                href="https://shanono-bank.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                >Live demo →</a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__head">
+                <span class="project-card__icon">🛒</span>
+                <a
+                  class="project-card__link"
+                  href="https://tandtdeals.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open T and T Deals"
+                  >↗</a
+                >
+              </div>
+              <h3>T &amp; T Deals</h3>
+              <p>
+                E-commerce platform with product catalogue, cart and checkout —
+                helped increase sales conversion by 15% and mobile users by 25%.
+              </p>
+              <div class="timeline__tags">
+                <span>React</span><span>Tailwind</span><span>E-commerce</span>
+              </div>
+              <a
+                class="project-card__cta"
+                href="https://tandtdeals.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                >Live demo →</a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__head">
+                <span class="project-card__icon">📊</span>
+                <a
+                  class="project-card__link"
+                  href="https://final-drab-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Modern Dashboard"
+                  >↗</a
+                >
+              </div>
+              <h3>Modern Dashboard</h3>
+              <p>
+                A responsive admin dashboard with charts, data tables and dark
+                mode — page load times cut by 40% through code-splitting and
+                optimisation.
+              </p>
+              <div class="timeline__tags">
+                <span>React</span><span>Charting</span><span>Responsive</span>
+              </div>
+              <a
+                class="project-card__cta"
+                href="https://final-drab-five.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                >Live demo →</a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__head">
+                <span class="project-card__icon">🏫</span>
+                <a
+                  class="project-card__link"
+                  href="https://school-management-app-virid.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open School Management App"
+                  >↗</a
+                >
+              </div>
+              <h3>School Management App</h3>
+              <p>
+                Cross-platform app for students, teachers and parents —
+                assignments, results and messaging with 30% faster assignment
+                processing.
+              </p>
+              <div class="timeline__tags">
+                <span>React Native</span><span>TypeScript</span
+                ><span>Redux</span>
+              </div>
+              <a
+                class="project-card__cta"
+                href="https://school-management-app-virid.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                >Live demo →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ================= GALLERY ================= -->
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <p class="section__eyebrow reveal">Moments</p>
+          <h2 class="section__title reveal">Photo Gallery</h2>
+          <p class="section__subtitle reveal">
+            Memories from work, friends and life.
+          </p>
+
+          <div class="gallery__grid">
+            <figure
+              class="gallery__item reveal"
+              data-lightbox="assets/images/fatai.jpg"
+            >
+              <img
+                src="assets/images/fatai.jpg"
+                alt="Jabar Fatai"
+                loading="lazy"
+              />
+              <figcaption>Jabar Fatai</figcaption>
+            </figure>
+
+            <figure class="gallery__item gallery__item--pending reveal">
+              <img
+                src="assets/images/gallery-2.jpg"
+                alt="Photo coming soon"
+                loading="lazy"
+                onerror="
+                  this.closest('.gallery__item').classList.add('is-empty')
+                "
+              />
+              <figcaption>Coming soon · <code>gallery-2.jpg</code></figcaption>
+            </figure>
+
+            <figure class="gallery__item gallery__item--pending reveal">
+              <img
+                src="assets/images/gallery-3.jpg"
+                alt="Photo coming soon"
+                loading="lazy"
+                onerror="
+                  this.closest('.gallery__item').classList.add('is-empty')
+                "
+              />
+              <figcaption>Coming soon · <code>gallery-3.jpg</code></figcaption>
+            </figure>
+
+            <figure class="gallery__item gallery__item--pending reveal">
+              <img
+                src="assets/images/gallery-4.jpg"
+                alt="Photo coming soon"
+                loading="lazy"
+                onerror="
+                  this.closest('.gallery__item').classList.add('is-empty')
+                "
+              />
+              <figcaption>Coming soon · <code>gallery-4.jpg</code></figcaption>
+            </figure>
+
+            <figure class="gallery__item gallery__item--pending reveal">
+              <img
+                src="assets/images/gallery-5.jpg"
+                alt="Photo coming soon"
+                loading="lazy"
+                onerror="
+                  this.closest('.gallery__item').classList.add('is-empty')
+                "
+              />
+              <figcaption>Coming soon · <code>gallery-5.jpg</code></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- ================= CONTACT ================= -->
+      <section class="contact section section--alt" id="contact">
+        <div class="container">
+          <p class="section__eyebrow reveal">Let's work together</p>
+          <h2 class="section__title reveal">Get In Touch</h2>
+          <p class="section__subtitle reveal">
+            Have a project or role in mind? My inbox is always open — I'll get
+            back to you quickly.
+          </p>
+
+          <div class="contact__grid">
+            <div class="contact__info">
+              <a class="contact-card reveal" href="mailto:aabdfatahi@gmail.com">
+                <span class="contact-card__icon">✉️</span>
+                <div>
+                  <h3>Email</h3>
+                  <p>aabdfatahi@gmail.com</p>
+                </div>
+              </a>
+              <a class="contact-card reveal" href="tel:+2349069115484">
+                <span class="contact-card__icon">📞</span>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+234 906 911 5484</p>
+                </div>
+              </a>
+              <a
+                class="contact-card reveal"
+                href="https://github.com/Abu-Haneefah"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-card__icon">🐙</span>
+                <div>
+                  <h3>GitHub</h3>
+                  <p>github.com/Abu-Haneefah</p>
+                </div>
+              </a>
+              <a
+                class="contact-card reveal"
+                href="https://www.linkedin.com/in/fatai-jabar-9309a4279"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-card__icon">💼</span>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p>fatai-jabar-9309a4279</p>
+                </div>
+              </a>
+            </div>
+
+            <form class="contact__form reveal" id="contact-form" novalidate>
+              <div class="form__row">
+                <label for="name">Your name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form__row">
+                <label for="email">Your email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <div class="form__row">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Project enquiry"
+                />
+              </div>
+              <div class="form__row">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project…"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">
+                Send Message
+              </button>
+              <p
+                class="form__status"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#home" class="nav__logo"
+          ><span class="nav__logo-badge">JF</span> Jabar&nbsp;Fatai</a
+        >
+        <ul class="footer__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/Jabar-Fatai-CV.pdf" download>Download CV</a></li>
+        </ul>
+        <p class="footer__copy">
+          © <span id="year">2026</span> Jabar Fatai · Frontend Developer. Built
+          with ❤️ using pure HTML, CSS &amp; JS.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close">
+        &times;
+      </button>
+      <img src="" alt="Gallery preview" id="lightbox-img" />
+    </div>
+
+    <!-- Back to top -->
+    <button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
